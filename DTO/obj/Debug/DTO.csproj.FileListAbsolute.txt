@@ -1,0 +1,6 @@
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DTO\bin\Debug\DTO.dll
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DTO\bin\Debug\DTO.pdb
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DTO\obj\Debug\DTO.dll
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DTO\obj\Debug\DTO.pdb

@@ -1,0 +1,12 @@
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\BLL\bin\Debug\BLL.dll
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\BLL\bin\Debug\BLL.pdb
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\BLL\obj\Debug\BLL.dll
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\BLL\obj\Debug\BLL.pdb
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\BLL\bin\Debug\DAO.dll
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\BLL\bin\Debug\DTO.dll
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\BLL\bin\Debug\DAO.pdb
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\BLL\bin\Debug\DAO.dll.config
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\BLL\bin\Debug\DTO.pdb
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\BLL\obj\Debug\BLL.csproj.CopyComplete

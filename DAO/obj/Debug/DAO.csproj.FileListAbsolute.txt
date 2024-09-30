@@ -1,0 +1,10 @@
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DAO\bin\Debug\DAO.dll.config
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DAO\bin\Debug\DAO.dll
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DAO\bin\Debug\DAO.pdb
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DAO\obj\Debug\DAO.dll
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DAO\obj\Debug\DAO.pdb
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DAO\bin\Debug\DTO.dll
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DAO\bin\Debug\DTO.pdb
+D:\HUIT_Time\HK7\KTL1\NguyenQuocTien_KTL1\DAO\obj\Debug\DAO.csproj.CopyComplete

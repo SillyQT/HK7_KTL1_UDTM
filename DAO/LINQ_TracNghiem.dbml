@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TracNghiem" Class="LINQ_TracNghiemDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SILLY-LAPTOP-FV;Initial Catalog=TracNghiem;Integrated Security=True" SettingsObjectName="DAO.Properties.Settings" SettingsPropertyName="TracNghiemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.KetQua" Member="KetQuas">
+    <Type Name="KetQua">
+      <Column Name="MaDT" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaSV" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NgayThi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Diem" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DapAN" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Association Name="tblSV_KetQua" Member="tblSV" ThisKey="MaSV" OtherKey="MaSV" Type="tblSV" IsForeignKey="true" />
+      <Association Name="tblDeThi_KetQua" Member="tblDeThi" ThisKey="MaDT" OtherKey="MaDeThi" Type="tblDeThi" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSV" Member="tblSVs">
+    <Type Name="tblSV">
+      <Column Name="MaSV" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MatKhau" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NamSinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblSV_KetQua" Member="KetQuas" ThisKey="MaSV" OtherKey="MaSV" Type="KetQua" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblCauHoi" Member="tblCauHois">
+    <Type Name="tblCauHoi">
+      <Column Name="MaCH" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NoiDung" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="tblCauHoi_tblChiTietDeThi" Member="tblChiTietDeThis" ThisKey="MaCH" OtherKey="MaCH" Type="tblChiTietDeThi" />
+      <Association Name="tblCauHoi_tblDapAn" Member="tblDapAns" ThisKey="MaCH" OtherKey="MaCH" Type="tblDapAn" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblChiTietDeThi" Member="tblChiTietDeThis">
+    <Type Name="tblChiTietDeThi">
+      <Column Name="MaDT" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaCH" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ThuTu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblCauHoi_tblChiTietDeThi" Member="tblCauHoi" ThisKey="MaCH" OtherKey="MaCH" Type="tblCauHoi" IsForeignKey="true" />
+      <Association Name="tblDeThi_tblChiTietDeThi" Member="tblDeThi" ThisKey="MaDT" OtherKey="MaDeThi" Type="tblDeThi" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDapAn" Member="tblDapAns">
+    <Type Name="tblDapAn">
+      <Column Name="MaCH" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaTL" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NoiDungTL" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DapAn" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblCauHoi_tblDapAn" Member="tblCauHoi" ThisKey="MaCH" OtherKey="MaCH" Type="tblCauHoi" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDeThi" Member="tblDeThis">
+    <Type Name="tblDeThi">
+      <Column Name="MaDeThi" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDT" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="tblDeThi_KetQua" Member="KetQuas" ThisKey="MaDeThi" OtherKey="MaDT" Type="KetQua" />
+      <Association Name="tblDeThi_tblChiTietDeThi" Member="tblChiTietDeThis" ThisKey="MaDeThi" OtherKey="MaDT" Type="tblChiTietDeThi" />
+    </Type>
+  </Table>
+</Database>
